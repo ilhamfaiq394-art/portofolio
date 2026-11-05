@@ -1,12 +1,12 @@
 /* ===== Variables ===== */
 :root {
-    --primary: #2563eb;       /* Biru modern */
-    --secondary: #0f172a;     /* Slate/Navy gelap untuk Navbar & Footer */
-    --text: #475569;          /* Warna teks abu-abu slate yang nyaman dibaca */
-    --card-bg: #ffffff;       /* Putih bersih untuk card */
-    --purple: #7c3aed;        
-    --green: #059669;         
-    --border-color: #e2e8f0;  /* Border abu-abu tipis untuk card */
+    --primary: #2563eb;
+    --secondary: #0f172a;
+    --text: #475569;
+    --card-bg: #ffffff;
+    --purple: #7c3aed;
+    --green: #059669;
+    --border-color: #e2e8f0;
 }
 
 * {
@@ -17,11 +17,11 @@
     scroll-behavior: smooth;
 }
 
-/* ===== Body: Clean & Professional Mesh Gradient ===== */
+/* ===== Body ===== */
 body {
     color: var(--text);
     line-height: 1.6;
-    background-color: #f8fafc; /* Background dasar abu-biru sangat muda */
+    background-color: #f8fafc;
     background-image:
         radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.08), transparent 50%),
         radial-gradient(at 100% 0%, rgba(124, 58, 237, 0.05), transparent 50%),
@@ -36,7 +36,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(15, 23, 42, 0.95); /* Navy gelap dengan sedikit transparansi */
+    background: rgba(15, 23, 42, 0.95);
     backdrop-filter: blur(12px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -49,20 +49,20 @@ nav {
     align-items: center;
     padding: 1rem 2rem;
 }
-.logo { 
-    font-weight: 700; 
-    font-size: 1.2rem; 
-    color: #ffffff; 
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #ffffff;
 }
 .nav-links { display: flex; gap: 1.5rem; }
 .nav-links a {
-    color: #cbd5e1; /* Abu-abu terang agar tidak terlalu kontras dengan background gelap */
+    color: #cbd5e1;
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s;
     white-space: nowrap;
 }
-.nav-links a:hover { color: #60a5fa; } /* Hover biru terang */
+.nav-links a:hover { color: #60a5fa; }
 .menu-toggle {
     display: none;
     font-size: 1.5rem;
@@ -107,9 +107,9 @@ nav {
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
 }
-.btn:hover { 
-    transform: translateY(-3px); 
-    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4); 
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
 }
 
 /* ===== Section generic ===== */
@@ -195,7 +195,7 @@ section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
     gap: 2rem;
 }
 .card {
-    background: var(--card-bg); /* Card putih bersih */
+    background: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 16px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
@@ -204,9 +204,9 @@ section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card:hover { 
-    transform: translateY(-6px); 
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 .card-body { padding: 1.5rem; display: flex; flex-direction: column; flex: 1; }
 .card h3 { color: var(--secondary); margin-bottom: 0.5rem; font-size: 1.1rem; }
@@ -235,9 +235,9 @@ section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
 .skill-group:nth-child(2) { --accent: var(--purple); --accent-light: #f5f3ff; --accent-text: var(--purple); }
 .skill-group:nth-child(3) { --accent: var(--green);  --accent-light: #ecfdf5; --accent-text: var(--green); }
 
-.skill-group:hover { 
-    transform: translateY(-4px); 
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
+.skill-group:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .skill-group-title {
@@ -289,7 +289,7 @@ section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
 /* ===== Footer ===== */
 footer {
     background: var(--secondary);
-    color: #94a3b8; /* Abu-abu terang untuk teks footer */
+    color: #94a3b8;
     text-align: center;
     padding: 1.5rem;
     margin-top: 3rem;
